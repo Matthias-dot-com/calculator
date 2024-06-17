@@ -37,7 +37,6 @@ toggleCheckbox.addEventListener("change", function() {
   }
 });
 
-// Disable calculator initially
 disableCalculator();
 displayScreen.textContent = "Calculator Off";
 

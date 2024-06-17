@@ -4,13 +4,13 @@ body {
   box-sizing: border-box;
   height: 100%;
   text-align: center;
-  background-color: #f0f0f0;
+  background-color: bisque;
   font-family: Arial, sans-serif;
   min-width: none;
 }
 
 .outter {
-    border: 1px solid black;
+    border: 1px solid rgb(255, 255, 255);
     margin: 0 auto;
     height: 70vh;
     width: 50%;
@@ -18,11 +18,11 @@ body {
     flex-direction: column;
     overflow: hidden;
     background-color: #eef8f8;
-    box-shadow: inset 1px 1px 5px #ffffff, inset -1px -1px 5px #ccc, 1px 1px 5px rgba(0, 0, 0, 0.5);
+    box-shadow: inset 1px 1px 5px #0e0b0b, inset -1px -1px 5px #ccc, 1px 1px 5px rgba(0, 0, 0, 0.5);
 }
 
 .screen {
-    border: 1px solid brown;
+    border: 1px solid #fffbfb;
     margin: 20px;
     padding: 20px;
     flex: 0 0 auto;
@@ -48,38 +48,45 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    border: 1px solid red;
+    border: 1px solid rgb(255, 254, 254);
     margin: 20px;
     flex: 1;
     overflow: auto;
-    background-color: #030c6d;
+    background-color: #000001;
     box-shadow: inset 1px 1px 5px #ffffff, inset -1px -1px 5px #ccc, 1px 1px 5px rgba(0, 0, 0, 0.5);
 }
 
 .controls {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    border: 1px solid purple;
-    margin: 20px;
-    padding: 20px;
-    width: 10%;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid rgb(255, 255, 255);
+    margin: 10px;
+    width: 15%;
     overflow: auto;
     background-color: #020000;
     box-shadow: inset 1px 1px 5px #ffffff, inset -1px -1px 5px #ccc, 1px 1px 5px rgba(0, 0, 0, 0.5);
 }
 
-.onof,.add,.sub,.mul,.divi,.clear{
+/* .onof,.add,.sub,.mul,.divi,.clear{
     margin: 10px;
-    border: 1px solid black;
-    padding: 10px;
-    width: 30px;
+    width: 10%;
     height: 20px;
     text-align: center;
-    background-color: #19c4fd;
+    background-color: #000000;
     box-shadow: inset 1px 1px 5px #ffffff, inset -1px -1px 5px #ccc, 1px 1px 5px rgba(0, 0, 0, 0.5);
-}
+} */
 
+.op-btn,.cl-btn{
+  border: none;
+  background-color: #000000;
+  color: white;
+  box-shadow: inset 1px 1px 5px #ffffff, inset -1px -1px 5px #ccc, 1px 1px 5px rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  margin: 0 2px;
+  border-radius: 10px;
+}
 
 .frow,
 .srow,
@@ -104,30 +111,24 @@ body {
 .e {
     border: 1px solid black;
     border-radius: 10px;
-    padding: 10px;
     width: 10%;
     text-align: center;
-    background-color: #19c4fd;
+    background-color: #000000;
     box-shadow: inset 1px 1px 5px #ffffff, inset -1px -1px 5px #ccc, 1px 1px 5px rgba(0, 0, 0, 0.5);
 }
 
-button {
+.btn, .eq-btn {
     text-align: center;
     width: 100%;
+    border: none;
     border-radius: 10px;
     height: 100%;
     color: white;
+    padding: 10px;
     background-color: #0a0004;
     box-shadow: inset 1px 1px 5px #ffffff, inset -1px -1px 5px #ccc, 1px 1px 5px rgba(0, 0, 0, 0.5);
 }
 
-
-body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-  }
-  
   .toggle-container {
     position: relative;
     display: inline-block;
